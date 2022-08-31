@@ -1,0 +1,146 @@
+/* RESETS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+}
+
+/* CSS */
+
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.container{
+    max-width: 375px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.219);
+}
+
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    flex: 1;
+}
+
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+    flex: 1;
+}
+
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    flex: 1;
+}
+
+.card-container{
+    margin: 3.3rem;
+}
+
+.text-box{
+    padding-top: 2.3rem;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    font-size: 2.6em;
+    margin-bottom: 2rem;
+}
+
+p{
+    line-height: 30px;
+    margin-bottom: 2rem;
+}
+
+.boutton{
+    background-color: hsl(0, 0%, 95%);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: max-content;
+    border-radius: 30px;
+    border: 2px solid hsl(0, 0%, 95%);
+    transition: background-color 0.4s;
+}
+
+.boutton:hover{
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+
+.boutton:hover a{
+    color: hsl(0, 0%, 95%);
+}
+
+a{
+    text-decoration: none;
+}
+
+.sedans a{
+    color: hsl(31, 77%, 52%);
+    transition: color 0.4s;
+}
+.suvs a{
+    color: hsl(184, 100%, 22%);
+    transition: color 0.4s;
+}
+
+.luxury a{
+    color: hsl(179, 100%, 13%);
+    transition: color 0.4s;
+}
+
+footer{
+    color: black;
+    font-size: 0.9em;
+}
+
+footer a{
+    color: hsl(184, 100%, 22%);
+}
+
+@media screen and (min-width: 1024px) {
+    .container{
+        max-width: 1020px;
+    }
+
+    .wrapper{
+        flex-direction: row;
+    }
+
+    .card-container{
+        margin-left: 3.7rem;
+        margin-right: 3.7rem;
+    }
+
+    p{
+        line-height: 25px;
+        margin-bottom: 6rem;
+    }
+
+    footer{
+        font-size: 1em;
+    }
+}
